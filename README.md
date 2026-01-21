@@ -1,6 +1,6 @@
 # DevOps Learning Journey
 
-Your personal repository for tracking progress through the CoderCo DevOps curriculum.
+My personal repository for tracking progress through the CoderCo DevOps curriculum.
 
 ## Quick Start
 
