@@ -40,23 +40,14 @@ make sense. Seeing all the networking components working together made the theor
 ------------------------------------------------------------------------
 # 🌐 Architecture
 
-```text
-Internet
-   │
-   ▼
-Cloudflare DNS
-   │
-   ▼
-alexandravladu.co.uk
-   │
-   ▼
-EC2 (Amazon Linux)
-   │
-   ▼
-NGINX
-   │
-   ▼
-Website
+```mermaid
+flowchart TD
+    A[Internet] --> B[Cloudflare DNS]
+    B --> C[EC2 Public IPv4]
+    C --> D[AWS Security Group<br/>HTTP :80]
+    D --> E[Amazon Linux 2023]
+    E --> F[NGINX]
+    F --> G[Custom Landing Page]
 ```
 ------------------------------------------------------------------------
 
